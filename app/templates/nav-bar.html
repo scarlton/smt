@@ -1,0 +1,46 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <a class="brand" href="{{nav_bar.home}}">Social Media Toolbox</a>
+
+      <!--
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="{{nav_bar.home}}"><span class="icon-home"></span>Home</a></li>
+          <li><a href="https://github.com"><span class="icon-github-sign icon-white icon-large"></span>GitHub</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-heart"></span>Stuff<span class="caret"</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Thing One</a></li>
+              <li><a href="#">Thing Two</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span>Contact<span class="caret"</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Twitter<span class="icon-twitter-sign icon-large pull-right"></span></a></li>
+              <li><a href="#">LinkedIN<span class="icon-linkedin-sign icon-large pull-right"></span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="pull-right">
+          <ul class="nav">
+            {% if prefs %}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="//www.gravatar.com/avatar/{{prefs.email_md5}}?s=16&d=mm" align="absmiddle" /> {{prefs.nickname}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{nav_bar.account}}">Account<span class="icon-cogs pull-right"></span></a></li>
+                <li><a href="{{nav_bar.logout}}">Log Out<span class="icon-signout pull-right"></span></a></li>
+              </ul>
+            </li>
+            {% else %}
+            <li><a href="/login?continue-/">Test The Login</a></li>
+            <li><a href="{{nav_bar.login}}"><span class="icon-signin"></span>Test The Login</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>

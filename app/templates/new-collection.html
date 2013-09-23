@@ -1,0 +1,21 @@
+{% extends "page_template.html" %}
+
+{% block main %}
+<h1>New Collection</h1>
+
+<form class="form-horizontal" method="post">
+    <div class="control-group">
+        <label class="control-label" for="videoId">Video ID</label>
+        <div class="controls">
+            <input type="text" id="videoId" name="videoId" />
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Start Collection</button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
